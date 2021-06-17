@@ -1,0 +1,71 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */ 
+body {
+  margin: 25px;
+  background-color: rgba(51,51,51,255);
+  font-family: arial, sans-serif;
+  font-size: 14px; 
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h2 { 
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px; 
+  color: rgba(135,197,64,255);
+  text-align: center;
+} 
+h1 { 
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px; 
+  color: rgba(135,197,64,255); 
+  text-align: center;
+} 
+
+p {
+  font-weight: normal;
+  margin-top: 5px; 
+  color: rgba(229,232,237,255);
+  text-align: center;
+}
+
+/* Applies to all elements with <... class="someclass"> specified. */
+.responsive { 
+  display: block;
+  max-width:200px;
+  max-height:200px;
+  width: auto;
+  height: auto; 
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.logo { 
+   display: table;
+   width: 50px;
+   height: 50px;
+   margin: 0 auto; 
+} 
+
+.sidelogo { 
+   display: inline-block; 
+   margin-left: auto; 
+   margin-right: auto; 
+   height: 50px; 
+} 
+   
+#images { 
+   text-align:center; 
+} 
+
+.sidelogo1 { 
+   display: inline-block; 
+   margin-left: auto; 
+   margin-right: auto; 
+   height: 30px; 
+} 
+
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }

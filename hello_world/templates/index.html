@@ -1,0 +1,54 @@
+{% load static %} 
+<html>
+  <head> 
+    <title>Profile</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  href="{%  static 'css/style.css'  %}">
+  </head> 
+  <h2>Myself, Ahamed Aslam</h2><br/>
+  <img src="{% static 'photo.jpg' %}" width="150" height="180" alt="profile" class="responsive"/> <br/>
+  <p style="font-size:17px">Self taught python programmer, web designer, still learner, hungrier, try-hard person and also a minimalist.<br/>Currently working as an Accountant, i'm good in accounting as well.</p><br/>
+  <h1>Technical skills</h> <br/> <br/>
+  
+
+<div id="images"> 
+<img class="sidelogo" border="0" alt="python" src="{% static 'python.png' %}"/>
+<img class="sidelogo" border="0" alt="flask" src="{% static 'flask.png' %}"/> 
+<img class="sidelogo" border="0" alt="django" src="{% static 'django.png' %}"/> 
+<img class="sidelogo" border="0" alt="java" src="{% static 'java.png' %}"/>
+</div>
+<div id="images"> 
+<img class="sidelogo" border="0" alt="c" src="{% static 'c.png' %}"/> 
+<img class="sidelogo" border="0" alt="dotnet" src="{% static 'dotnet.png' %}"/> 
+<img class="sidelogo" border="0" alt="sql" src="{% static 'sql.png' %}"/> 
+</div> 
+<div id="images">
+<img class="sidelogo" border="0" alt="tally" src="{% static 'tally.png' %}"/> 
+<img class="sidelogo" border="0" alt="msoffice" src="{% static 'msoffice.png' %}"/> 
+<img class="sidelogo" border="0" alt="accounting" src="{% static 'accounting.png' %}"/> 
+</div>
+<br/>
+  <h1>Education</h1> 
+  <p style="font-size:17px">Graduated as B.Tech in Information Technology.</p><br/>
+  <h1>Projects</h1> 
+  <p style="font-size:17px">• Geo specific tag recommendation to photos</p>
+  <img src="{% static 'logo0.png' %}" alt="geotag" class="logo"/><br/>
+  <p style="font-size:14px;"><i>Giving geo specific tags to photos along with latitude and logitude. <br/> Made with JAVA, SQL, api's.</i></p><br/>
+  <p style="font-size:17px">• A Blog app like twitter</p> 
+  <img src="{% static 'logo1.png' %}" alt="blog" class="logo"/><br/> 
+  <p style="font-size:14px"><i>A simple blog app where you can chat, add friends, follow/unfollow people, set profile pic and post your story.<br/>Made with Python, Flask, SQL, HTML, BOOTSTRAP.<br/>I have deployed this on Heroku.<br/>Just create an account before login, its very easy 😄.</i><br/>👉 <a href="https://salsa-blog.herokuapp.com/" style="color:rgba(229,232,237,255)"><b>Salsa Blog</b></a></p><br/>
+  <p style="font-size:17px">• Chatbots</p> 
+  <img src="{% static 'logo2.png' %}" alt="bot" class="logo"/> 
+  <p style="font-size:14px"><i>Created couple of chatbots on telegram by <b>python-telegram-bot</b> library. I have used machine learning libraries such as <b>pyTorch, keras, nltk</b> to make them chat like human as possible. </i>Wanna chat here? </p><center><p>👇</p></center>
+   <center><a href="{% url "chatwithpete" %}"><img src="{% static 'bot.gif'%}" alt="pete" style="margin-left: auto; margin-right: auto; height: 130px"/></a></center>
+  <br/>
+  <p style="font-size:17px">• Android app for COVID19😷 - WIP</p> 
+  <img src="{% static 'logo3.png' %}" alt="covid" class="logo"/> 
+  <p style="font-size:14px"><i>App to check corona stats, symptoms checking, remind you to wash hands and more.<br/>Currently building with JAVA, REST api's and some Python.</i></p><br/><br/> 
+  <div id="images"> 
+  <a href="mailto:aslam00720@gmail.com"><img src="{% static 'mail.png' %}" class="sidelogo1"/></a> 
+  <a href="https://telegram.me/bearwantsmeat"><img src="{% static 'telegram.png' %}" class="sidelogo1"/></a> 
+  <a href="https://github.com/codezzzahm"><img src="{% static 'git.png' %}" class="sidelogo1"/></a>
+ </div> 
+ <footer> <p style="font-size:10px">Everything you imagine is real  -Picasso</p> </footer> 
+</html>
